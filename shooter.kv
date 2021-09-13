@@ -1,3 +1,30 @@
 BoxLayout:
-    Button:
-        text: 'Push me'
+    height: 100
+    orientation: 'vertical'
+    BoxLayout:
+        size_hint: [1, 0.4]
+        Label:
+            text: 'X pos'
+        TextInput:
+            id: 'x_pos'
+            text: '0'
+        Label:
+            text: 'Y pos'
+        TextInput:
+            id: 'y_pos'
+            text: '0'
+        Label:
+            text: 'width'
+        TextInput:
+            id: 'width'
+            text: '0'
+        Label:
+            text: 'height'
+        TextInput:
+            id: 'height'
+            text: '0'
+    BoxLayout:
+        spacing: 10
+        Button:
+            text: 'Shoot!'
+            on_press: app.shoot()
