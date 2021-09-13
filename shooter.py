@@ -10,6 +10,7 @@ else:
 
 class ShooterApp(App):
 
+    Window.size = (500, 100)
     def build(self):
         pass
 
@@ -29,10 +30,3 @@ class ShooterApp(App):
             im = ImageGrab.grab()
         im.show()
 
-
-if __name__ == '__main__':
-    app = ShooterApp()
-    app.title = 'INProduct ShooteR'
-
-    Window.size = (500, 100)
-    app.run()
