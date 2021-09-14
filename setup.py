@@ -8,5 +8,5 @@ setup(
     license='',
     author='alex',
     author_email='info@inproduct.de',
-    description='screencapture'
+    description='comicreader'
 )
